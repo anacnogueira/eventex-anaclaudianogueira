@@ -1,12 +1,13 @@
+*.sqlite3
+*pyc
 .bash_profile
 .env
 .idea
 .wttd
-*.sqlite3
-landingpage.zip
-landingpage/
-*pyc
 __pycache__
 google-python-exercises.zip
 google-python-exercises/
 google/
+landingpage.zip
+landingpage/
+staticfiles/90
