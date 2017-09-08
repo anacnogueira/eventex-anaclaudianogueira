@@ -1,5 +1,5 @@
 #Eventex
-Sistema de eventos enomendado pela morena
+Sistema de eventos encomendado pela morena
 
 [![Build Status](https://travis-ci.org/anacnogueira/eventex-anaclaudianogueira.svg?branch=master)](https://travis-ci.org/anacnogueira/eventex-anaclaudianogueira)
 [![Code Health](https://landscape.io/github/anacnogueira/eventex-anaclaudianogueira/master/landscape.svg?style=flat)](https://landscape.io/github/anacnogueira/eventex-anaclaudianogueira/master)
