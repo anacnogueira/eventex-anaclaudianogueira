@@ -18,6 +18,7 @@ import os
 from decouple import config, Csv
 from dj_database_url import parse as dburl
 
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -35,16 +36,17 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 DEFAULT_FROM_EMAIL = 'contato@eventex.com.br'
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_extensions',
     'eventex.core',
     'eventex.subscriptions',
-]
+)
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
