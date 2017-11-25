@@ -49,8 +49,8 @@ class SubscribePostValid(TestCase):
 
 
     def test_post(self):
-        """Valid Post should redirect to /inscricao/"""
-        self.assertEqual(302, self.resp.status_code)
+        """Valid Post should redirect to /inscricao/1/"""
+        self.assertRedirects(self.resp,'/inscricao/1/')
 
     def test_send_subscribe(self):
         self.assertEqual(1, len(mail.outbox))
@@ -83,12 +83,5 @@ class SubscribePostInvalid(TestCase):
     def test_dont_save_subscription(self):
         self.assertFalse(Subscription.objects.exists())
 
-class SubscribeSucessMessage(TestCase):
-    def test_message(self):
-        data = dict(name='Ana Claudia', cpf='12345678901',
-        email='anacnogueira@gmail.com', phone='12-998826-9414')
-
-        response = self.client.post('/inscricao/', data, follow=True)
-        self.assertContains(response, 'Inscrição realizada com sucesso')
 
 
