@@ -1,0 +1,28 @@
+
+#Python Regex
+import re
+
+re.match('abc', 'abc')
+SRE_Match
+span=(0,3)
+match='abc'
+
+re.search('abc','efgabc')
+span=(3,6)
+match='abc'
+
+re.findall('abc','123abc456abc')
+['abc','abc']
+
+from re import match, search, findall
+
+match('.', 'abc')
+span=(0,1), match='a'
+
+match('.', '012')
+span=(0,1), match='0'
+
+text = '\\section\n'
+
+match(r'\\section, text)
+//rawstring
